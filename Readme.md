@@ -39,6 +39,7 @@ Generative Adversarial Networks (GANs) are a class of machine learning framework
    ```bash
    git clone https://github.com/your-username/gan-discriminator.git
    cd gan-discriminator
+   ```
 
 2. install the required dependencies 
     ```python
@@ -47,12 +48,12 @@ Generative Adversarial Networks (GANs) are a class of machine learning framework
 
 ### Usage 
 
-    1. Run the main script to test the generator and discriminator:
+1. Run the main script to test the generator and discriminator:
     ```python
         python discriminator.py
     ```
 
-    2. Modify the parameters in the `Discriminator` and `UNetGenerator` classes to experiment with different configurations.
+2. Modify the parameters in the `Discriminator` and `UNetGenerator` classes to experiment with different configurations.
 
 ## Model Details
 ### Generator
@@ -64,7 +65,7 @@ The generator is implemented as a U-Net with the following features:
 - Residual Blocks: Adds skip connections for better gradient flow.
 - Upsampling: Restores spatial dimensions to the original size.
 
-See the implementation in gan.py.
+See the implementation in [gan.py](https://github.com/ProgramerSalar/Discriminator/blob/master/gan.py).
 
 ### Discriminator
 The discriminator is a convolutional neural network with the following features:
@@ -73,7 +74,7 @@ The discriminator is a convolutional neural network with the following features:
 - Normalization: Supports BatchNorm or ActNorm.
 - Output: A single-channel prediction map indicating real/fake probabilities.
 
-See the implementation in discriminator.py.
+See the implementation in [discriminator.py](https://github.com/ProgramerSalar/Discriminator/blob/master/discriminator.py).
 
 
 ## Example Output
@@ -112,4 +113,4 @@ This demonstrates how the discriminator evaluates the input images and outputs a
 
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE file](https://github.com/ProgramerSalar/Discriminator/blob/master/LICENSE) for details.
